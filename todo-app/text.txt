@@ -1,0 +1,3 @@
+Create a new HTML file 
+Add an H1 and 5 paragraph tags.
+Server that folder and view that document in the browser.
