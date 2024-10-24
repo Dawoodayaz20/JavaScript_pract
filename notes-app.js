@@ -11,6 +11,18 @@ const notes = [{
     body : 'Get a new seat'
 }]
 
+const filters = {
+    searchText: ''
+}
+
+const renderNotes = function (notes, filters) {
+    const filteredNotes = notes.filter(function (note) {
+        return note.title.toLowerCase().includes(filters.searchText.toLowerCase())
+    })
+    console.log(filteredNotes)
+}
+
+renderNotes(notes, filters)
 
 document.querySelector('#add_note').addEventListener('click', function(event){
     event.target.textContent = 'The Button was clicked'
